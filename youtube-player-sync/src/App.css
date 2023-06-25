@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: rgb(62, 62, 62);
+}
+
+.video-responsive {
+  margin-top: 5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.video-responsive iframe {
+  height: 70vh;
+  width: 50vw;
+}
+.actions {
+  height: 70vh;
+  width: 50vw;
+  /* margin-bottom: 0;  */
+}
+.actions button {
+  color: blue;
+  /* width: 100px; */
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.actions input {
+  width: 500px;
+  margin-left: 15px;
+  border: 1px solid gray;
+}
+
+@media screen and (max-width: 960px) {
+  .actions input {
+    width: 220px;
+    margin-left: 10px;
+  }
+}
